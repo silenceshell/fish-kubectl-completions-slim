@@ -39,7 +39,7 @@ set __fish_kubectl_subresource_commands get describe delete edit
 
 for subcmd in $__fish_kubectl_subresource_commands
   for r in $__kubectl_resources
-      complete -f -c kubectl -n "__fish_seen_subcommand_from $subcmd; and __fish_seen_subcommand_from $r" -a '(__fish_print_resource $r)' -d 'Resource'
+      complete -f -c kubectl -n "__fish_seen_subcommand_from $subcmd; and __fish_seen_subcommand_from $r" -a "(__fish_print_resource $r)" -d 'Resource'
   end
 
   complete -c kubectl -f -n "__fish_seen_subcommand_from $subcmd; and not __fish_seen_subcommand_from (__fish_print_resource_types)" -a '(__fish_print_resource_types)' -d 'Resource'
