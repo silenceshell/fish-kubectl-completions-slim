@@ -4,7 +4,7 @@
 
 This project is inspired by [fish-kubectl-completions](https://github.com/evanlucas/fish-kubectl-completions.git).
 
-Why not use this project directly? It works **VERY** slowly on my workstation, normally I have to wait up to 10 to 20 seconds for the output.
+Why not use that project directly? It works **VERY** slowly on my workstation, normally I have to wait up to 10 to 20 seconds for the output.
 
 So I decided to write a slim one, and it works quite well.
 
