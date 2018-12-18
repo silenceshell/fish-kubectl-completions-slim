@@ -45,7 +45,8 @@ for subcmd in $__fish_kubectl_subresource_commands
   complete -c kubectl -f -n "__fish_seen_subcommand_from $subcmd; and not __fish_seen_subcommand_from (__fish_print_resource_types)" -a '(__fish_print_resource_types)' -d 'Resource'
 end
 
-complete -c kubectl -A -f -n '__fish_seen_subcommand_from exec' -a '(__fish_print_resource pods)' -d "Pod"
+complete -c kubectl -A -f -n '__fish_seen_subcommand_from exec' -a '(__fish_print_resource pods)' -d "Exec Pod"
+complete -c kubectl -A -f -n '__fish_seen_subcommand_from logs' -a '(__fish_print_resource pods)' -d "Log Pod"
 
 function __fish_print_resource_types
   for r in $__kubectl_resources
